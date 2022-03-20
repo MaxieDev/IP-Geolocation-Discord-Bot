@@ -40,13 +40,13 @@ async def on_ready():
 
     @client.command()
     async def help(ctx, cmd=None):
-        embed = discord.Embed()
-        embed.title = "Discord Bot Help / Dashboard"
-        embed.add_field(name=":globe_with_meridians: **IP Location**", value="`geolocate`", inline=False)
-        embed.set_thumbnail(url= ctx.guild.icon_url)
-        embed.set_footer(text="Help Commands", icon_url = ctx.guild.icon_url)
-        embed.color = discord.Color.blurple()
-        await ctx.reply(embed=embed, mention_author=False)
+            embed = discord.Embed()
+            embed.title = "Discord Bot Help / Dashboard"
+            embed.add_field(name=":globe_with_meridians: **IP Location**", value="`geolocate`", inline=False)
+            embed.set_thumbnail(url= ctx.guild.icon_url)
+            embed.set_footer(text="Help Commands", icon_url = ctx.guild.icon_url)
+            embed.color = discord.Color.blurple()
+            await ctx.reply(embed=embed, mention_author=False)
 
 #Token
 client.run(token)#you put your bot token inside of config.json
