@@ -10,7 +10,7 @@
 ```
 apt-get update
 apt-get install git
-git clone https://github.com/
+git clone https://github.com/UnknownToska/IP-Geolocation-Discord-Bot
 apt-get install python3.9
 apt-get install python3-pip
 pip3 install discord.py
