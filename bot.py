@@ -1,3 +1,4 @@
+#Ips is against discord tos I have nothing to do with whatever you do with this. This is just for learning experience.
 #Required Imports
 from discord.ext import commands
 import os, re, json, cogs, requests, discord
