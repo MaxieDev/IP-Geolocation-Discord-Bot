@@ -15,5 +15,5 @@ apt-get install python3.9
 apt-get install python3-pip
 pip3 install discord.py
 pip3 install requests
-nohup python3 Area51.py &
+nohup python3 bot.py &
 ```
