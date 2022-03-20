@@ -25,7 +25,7 @@ async def on_ready():
     print("Bot is now online!")
 
     @client.command()
-    async def geolocate(self, ctx, ip):
+    async def geolocate(ctx, ip):
             r = requests.get( url = f'https://ipinfo.io/{ip}/geo')
             embed = discord.Embed(title="Geolocation")
             embed.add_field(name="Ip", value=(r.json()["ip"]), inline=False)
@@ -39,7 +39,7 @@ async def on_ready():
             await ctx.send(embed=embed)
 
     @client.command()
-    async def chelp(self, ctx, cmd=None):
+    async def chelp(ctx, cmd=None):
         embed = discord.Embed()
         embed.title = "Discord Bot Help / Dashboard"
         embed.add_field(name=":globe_with_meridians: **IP Location**", value="`geolocate`", inline=False)
