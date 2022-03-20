@@ -4,7 +4,7 @@
 * This is just a ip geolocation you can take or use this.
 * Language: Python
 
-### Installation
+### Installation:
 - OS Ubuntu 20.04
 - Python Version 3.9
 ```
