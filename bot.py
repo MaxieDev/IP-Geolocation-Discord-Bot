@@ -39,7 +39,7 @@ async def on_ready():
             await ctx.send(embed=embed)
 
     @client.command()
-    async def chelp(ctx, cmd=None):
+    async def help(ctx, cmd=None):
         embed = discord.Embed()
         embed.title = "Discord Bot Help / Dashboard"
         embed.add_field(name=":globe_with_meridians: **IP Location**", value="`geolocate`", inline=False)
