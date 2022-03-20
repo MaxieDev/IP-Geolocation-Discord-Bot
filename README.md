@@ -1,7 +1,7 @@
 # IP-Geolocation-Discord-Bot
 
 ### About This:
-* This is just a ip geolocation you can take or use this.
+* This is just a simple discord ip geolocation, you can take or use this how ever you please.
 * Language: Python
 
 ### Installation:
