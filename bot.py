@@ -26,7 +26,7 @@ async def on_ready():
 
     @client.command()
     async def geolocate(ctx, ip):
-            r = requests.get( url = f'https://ipinfo.io/{ip}/geo')
+            r = requests.get( url = f'https://ipinfo.io/{ip}/geo')#API
             embed = discord.Embed(title="Geolocation")
             embed.add_field(name="Ip", value=(r.json()["ip"]), inline=False)
             embed.add_field(name="City", value=(r.json()["city"]), inline=False)
