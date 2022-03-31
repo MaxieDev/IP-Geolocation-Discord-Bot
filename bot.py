@@ -4,12 +4,8 @@ from discord.ext import commands
 import os, re, json, cogs, requests, discord
 
 #Config
-if os.path.exists (os.getcwd() + "/config.json"):
-    with open("./config.json") as f:
-        configData = json.load(f)
-else:
-    configTemplate = {"Token": "", "Prefix": ""}
-    with open(os.getcwd() +"/config.json", "w+") as f:json.dump (configTemplate, f)
+with open("config.json", "r") as confjson:
+	configData = json.load(confjson)
 
 token = configData["Token"]
 prefix = configData["Prefix"]
