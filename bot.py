@@ -10,10 +10,7 @@ with open("config.json", "r") as confjson:
 token = configData["Token"]
 prefix = configData["Prefix"]
 
-client = commands.Bot(
-        command_prefix = commands.when_mentioned_or(prefix),#Bot prefix if you wanna change this just go into config.json
-        help_command = None #Help category. I disabled this because i am using a custom help
-)
+client = commands.Bot(command_prefix = commands.when_mentioned_or(prefix), help_command = None)
 
 @client.event
 async def on_ready():
